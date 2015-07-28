@@ -12,7 +12,7 @@ MY_PN="artu.py"
 
 DESCRIPTION="A simple script to auto rsync to udisk"
 HOMEPAGE="https://github.com/meng89/artu"
-SRC_URI="https://github.com/meng89/artu/blob/master/dist/${MY_PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/meng89/artu/raw/master/dist/${MY_PN}-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
