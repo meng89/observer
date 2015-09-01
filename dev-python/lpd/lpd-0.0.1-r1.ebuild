@@ -11,9 +11,8 @@ inherit distutils-r1
 DESCRIPTION="Longman Pronunciation Dictionary dsl data python loader"
 HOMEPAGE="https://github.com/meng89/lpd"
 SRC_URI="https://github.com/meng89/lpd/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-
-
 LICENSE="MIT"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
