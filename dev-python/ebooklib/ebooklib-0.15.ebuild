@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/aerkalov/ebooklib"
 SRC_URI="https://github.com/aerkalov/ebooklib/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 
-LICENSE="MIT"
+LICENSE="AGPL"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
