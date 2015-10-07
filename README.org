@@ -1,6 +1,5 @@
 
 #+TITLE: Myself Gentoo Overlay
-====================
 
 Drop the following content into /etc/portage/repos.conf/meng89.conf
 
