@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
+# create this because gentoo version does not support python3 !!!!
+
 EAPI=5
 PYTHON_COMPAT=( python2_7 python{3_3,3_4} pypy )
 
