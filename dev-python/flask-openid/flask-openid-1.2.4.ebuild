@@ -23,7 +23,7 @@ IUSE="doc examples"
 
 RDEPEND="
 	>=dev-python/flask-0.3[${PYTHON_USEDEP}]
-	|| ( >=dev-python/python-openid-2.0[${PYTHON_USEDEP}] dev-python/python3-openid[${PYTHON_USEDEP}] )
+	dev-python/python3-openid[${PYTHON_USEDEP}]
 	doc? ( dev-python/sphinx[${PYTHON_USEDEP}] )"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]"
