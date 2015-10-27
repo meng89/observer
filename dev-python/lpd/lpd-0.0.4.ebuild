@@ -4,13 +4,14 @@
 
 EAPI="5"
 
-PYTHON_COMPAT=( python{3_3,3_4} )
+PYTHON_COMPAT=( python{3_3,3_4,3_5} )
 
 inherit distutils-r1
 
 DESCRIPTION="Longman Pronunciation Dictionary dsl data python loader"
-HOMEPAGE="https://github.com/meng89/lpd"
-SRC_URI="https://github.com/meng89/lpd/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+HOMEPAGE="https://github.com/meng89/${PN}"
+SRC_URI="https://github.com/meng89/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 
 SLOT="0"
