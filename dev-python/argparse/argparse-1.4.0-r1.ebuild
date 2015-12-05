@@ -10,8 +10,13 @@ inherit distutils-r1
 
 DESCRIPTION="Python command-line parsing library"
 
+MY_PV="r140"
+
 HOMEPAGE="https://github.com/ThomasWaldmann/argparse"
-SRC_URI="${HOMEPAGE}/archive/r140.tar.gz -> ${P}.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+
+S="${PN}-${MY_PV}"
+
 LICENSE="PSFL"
 
 SLOT="0"
