@@ -1,11 +1,18 @@
 
-#+TITLE: Myself Gentoo Overlay
+#+TITLE: observer
+A Gentoo Overlay
 
-Drop the following content into /etc/portage/repos.conf/meng89.conf
 
+Make sure you have already installed layman with the "git" USE, and then:
 #+BEGIN_EXAMPLE
-[meng89]
-location = /usr/local/portage/meng89
+layman -o https://raw.github.com/meng89/observer/master/repositories.xml -f -a observer
+#+END_EXAMPLE
+
+
+Or drop the following content into /etc/portage/repos.conf/observer.conf
+#+BEGIN_EXAMPLE
+[observer]
+location = /usr/local/portage/observer
 sync-type = git
-sync-uri = https://github.com/meng89/overlay.git
+sync-uri = https://github.com/meng89/observer.git
 #+END_EXAMPLE
