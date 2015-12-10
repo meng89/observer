@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
-<repositories xmlns="" version="1.0">
-  <repo quality="experimental" status="unofficial">
-    <name><![CDATA[chenmeng-overlay]]></name>
-    <description lang="en"><![CDATA[chenmeng Overlay]]></description>
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo priority = "50" quality="experimental" status="unofficial">
+    <name>Meng</name>
+    <description>Personal projects and other thing I need but not in Gentoo</description>
     <homepage>https://github.com/meng89/overlay</homepage>
-    <owner type="person">
+    <owner>
       <email>observer.chan@gmail.com</email>
-      <name><![CDATA[]]></name>
     </owner>
     <source type="git">git://github.com/meng89/overlay.git</source>
-    <feed>http://github.com/meng89/overlay/commits/master.atom</feed>
   </repo>
 </repositories>
