@@ -5,7 +5,7 @@
     <description>Personal projects and other thing I need but not in Gentoo</description>
     <homepage>https://github.com/meng89/overlay</homepage>
     <owner>
-      <email>observer.chan@gmail.com</email>
+      <email>ObserverChan@gmail.com</email>
     </owner>
     <source type="git">git://github.com/meng89/overlay.git</source>
   </repo>
