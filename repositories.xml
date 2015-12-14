@@ -1,7 +1,7 @@
 <repositories encoding="unicode" version="1.1">
   <repo priority="50" quality="experimental">
     <name>observer</name>
-    <description>Contains ebuilds I need, but not in official overlay.</description>
+    <description>Contains ebuilds I need, but not in Gentoo portage tree yet.</description>
     <homepage>https://github.com/meng89/observer</homepage>
     <owner>
       <email>ObserverChan@gmail.com</email>
