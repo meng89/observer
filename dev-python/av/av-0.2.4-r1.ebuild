@@ -28,4 +28,6 @@ RDEPEND="
     virtual/ffmpeg
 "
 
-DEPEND=""
+DEPEND=" 
+    dev-python/cython[${PYTHON_USEDEP}]
+"
