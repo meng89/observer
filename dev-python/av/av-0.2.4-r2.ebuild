@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python2_7 python3_{3,4,5} )
 
 inherit distutils-r1
 
-DESCRIPTION="Manipulate audio with a simple and easy high level interface"
+DESCRIPTION="Pythonic bindings for FFmpeg/Libav"
 
 HOMEPAGE="http://mikeboers.github.io/PyAV/"
 
