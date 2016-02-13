@@ -23,7 +23,7 @@ IUSE=""
 
 RDEPEND="
         dev-python/langid
-	dev-python/mutagen
+	media-libs/mutagen
 "
 
 DEPEND=" 
