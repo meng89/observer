@@ -24,6 +24,7 @@ IUSE=""
 RDEPEND="
         dev-python/langid
 	media-libs/mutagen
+	app-accessibility/svox
 "
 
 DEPEND=" 
