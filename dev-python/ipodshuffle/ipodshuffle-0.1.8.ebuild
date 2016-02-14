@@ -12,7 +12,7 @@ DESCRIPTION="A Python library and tools to manage iPod shuffle 4 generation"
 
 HOMEPAGE="https://github.com/meng89/${PN}"
 
-SRC_URI="https://github.com/meng89/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://pypi.python.org/packages/source/i/ipodshuffle/${P}.tar.gz"
 
 
 LICENSE="MIT"
@@ -22,10 +22,11 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-        dev-python/langid
-	media-libs/mutagen
+        dev-python/langid[${PYTHON_USEDEP}]
+	media-libs/mutagen[${PYTHON_USEDEP}]
 	app-accessibility/svox
 "
 
-DEPEND=" 
+DEPEND="
+       ${RDEPEND}
 "

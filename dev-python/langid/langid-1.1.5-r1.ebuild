@@ -22,7 +22,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
+	dev-python/numpy[${PYTHON_USEDEP}]
 "
 
-DEPEND=" 
+DEPEND="
 "
