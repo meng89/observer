@@ -2,8 +2,5 @@
 #+TITLE: observer
 A Gentoo Overlay
 
-#+BEGIN_EXAMPLE
-layman -L
+#+BEGIN_EXPAMP
 layman -a observer
-#+END_EXAMPLE
-
