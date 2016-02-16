@@ -11,7 +11,9 @@ inherit distutils-r1
 DESCRIPTION="A Python library to write EPUB v3"
 
 HOMEPAGE="https://github.com/meng89/${PN}"
-SRC_URI="https://github.com/meng89/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+SRC_URI="https://pypi.python.org/packages/source/e/${PN}/${P}.tar.gz"
+
 LICENSE="MIT"
 
 SLOT="0"
