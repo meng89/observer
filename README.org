@@ -2,6 +2,6 @@
 #+TITLE: observer
 A Gentoo Overlay
 
-#+SRC_EXPAMP
+#+BEGIN_SRC
 layman -a observer
-#+SRC_END
+#+END_SRC
