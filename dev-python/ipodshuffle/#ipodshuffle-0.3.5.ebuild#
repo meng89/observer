@@ -6,9 +6,10 @@ EAPI="5"
 
 PYTHON_COMPAT=( python3_{3,4,5} )
 
-inherit distutils-r1
+inherit distutils-
 
-DESCRIPTION="A Python library and tools to manage iPod shuffle 4 generation"
+
+DESCRIPTION="Python modules and tools for managing iPod shuffle 4th generation"
 
 HOMEPAGE="https://github.com/meng89/${PN}"
 
@@ -24,7 +25,7 @@ IUSE=""
 RDEPEND="
         dev-python/langid[${PYTHON_USEDEP}]
 	media-libs/mutagen[${PYTHON_USEDEP}]
-	app-accessibility/svox
+	svox? ( app-accessibility/svox )
 "
 
 DEPEND="
