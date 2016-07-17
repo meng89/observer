@@ -4,11 +4,11 @@
 
 EAPI="5"
 
-PYTHON_COMPAT=( python3_{3,4,5} )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python 3 module to build EPUB 2 or 3 document "
+DESCRIPTION="A Python module to build EPUB 2 or 3 document "
 
 HOMEPAGE="https://github.com/meng89/${PN}"
 
