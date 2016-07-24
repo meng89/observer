@@ -18,7 +18,7 @@ SLOT="0"
 
 KEYWORDS="~amd64 ~x86"
 
-IUSE="+fuse xattr ntfs ssl  iso-fs disk-img cab"
+IUSE="+fuse xattr +ntfs ssl  iso-fs disk-img cab"
 
 RDEPEND="
         dev-libs/libxml2
