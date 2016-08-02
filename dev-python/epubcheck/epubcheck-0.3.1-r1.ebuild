@@ -22,7 +22,7 @@ KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
         dev-python/tablib[${PYTHON_USEDEP}]
-
+	dev-python/scandir[${PYTHON_USEDEP}]
 "
 
 DEPEND="
