@@ -23,18 +23,18 @@ IUSE="+fuse xattr +ntfs ssl  iso-fs disk-img cab"
 RDEPEND="
         dev-libs/libxml2
 
-        fuse? ( 
-                sys-fs/fuse 
-                sys-apps/attr 
+        fuse? (
+                sys-fs/fuse
+                sys-apps/attr
         )
-	
+
         ntfs? ( sys-fs/ntfs3g )
 
         ssl? ( dev-libs/openssl )
 
 	iso-fs? ( app-cdr/cdrkit )
 
-	disk-img? ( 
+	disk-img? (
                 sys-fs/mtools
                 sys-boot/syslinux
         )
@@ -54,7 +54,7 @@ src_configure() {
 }
 
 src_compile() {
-        emake || die "emake failed" 
+        emake || die "emake failed"
 }
 
 src_install() {
