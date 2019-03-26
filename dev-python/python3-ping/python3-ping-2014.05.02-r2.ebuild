@@ -16,7 +16,7 @@ HOMEPAGE="https://github.com/emamirazavi/${PN}"
 
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.${EXTRA_PV}.tar.gz"
 
-WORKDIR="${PORTAGE_BUILDDIR}/work/${P}.${EXTRA_PV}"
+S="${WORKDIR}/${P}.${EXTRA_PV}"
 
 LICENSE="GPL v2"
 
