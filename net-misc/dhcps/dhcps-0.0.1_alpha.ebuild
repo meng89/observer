@@ -27,34 +27,46 @@ DEPEND="
 "
 
 S_OR="${S}"
-S_PY="${S}/python_part"
-S_EL="${S}/erlang_part"
+SP="${S}/python_part"
+SE="${S}/erlang_part"
 
 #S="${S_PY}"
 #echo $S
 
-BUILD_DIR="${S_PY}"
+#BUILD_DIR="${S_PY}"
+
 
 src_prepare() {
-    S="${S_PY}"
+    S=$SP
     distutils-r1_src_prepare
+
+    #S=$SE
+    #rebar_src_prepare
 }
 
-src_configure()
-{
-         S="${S_PY}"
+
+src_configure() {
+    S=$SP
+    distutils-r1_src_configure
+
+    #S=$SE
+    #rebar_src_configure
 	
-        distutils-r1_src_configure
-        
 }
 
 src_compile() {
-	      	S="${S_PY}"
-		distutils-r1_src_compile
+    S=$SP
+    distutils-r1_src_compile
+
+    #S=$SE
+    #rebar_src_compile
 }
 
 
 src_install() {
-	S="${S_PY}"
-	distutils-r1_src_install
+    S=$SP
+    distutils-r1_src_install
+
+    #S=$SE
+    #rebar_src_install
 }
