@@ -42,10 +42,10 @@ src_prepare() {
 
 src_configure()
 {
+         S="${S_PY}"
+	
+        distutils-r1_src_configure
         
-	cd python_part
-               distutils-r1_src_configure
-        cd ..
 }
 
 src_compile() {
