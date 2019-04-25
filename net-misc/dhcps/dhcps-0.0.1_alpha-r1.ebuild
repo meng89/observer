@@ -36,13 +36,20 @@ S_EL="${S}/erlang_part"
 
 src_prepare() {
     S="${S_PY}"
-    distutils-r1_python_prepare_all
+    distutils-r1_python_prepare
 }
 
+src_configure()
+{
+        
+	cd python_part
+               distutils-r1_src_configure
+        cd ..
+}
 
 src_compile() {
 	      	S="${S_PY}"
-		distutils-r1_python_compile_all
+		distutils-r1_python_compile
 }
 
 
