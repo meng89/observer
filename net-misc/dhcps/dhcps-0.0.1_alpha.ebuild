@@ -50,11 +50,11 @@ src_configure()
 
 src_compile() {
 	      	S="${S_PY}"
-		distutils-r1_python_compile
+		distutils-r1_src_compile
 }
 
 
 src_install() {
 	S="${S_PY}"
-	distutils-r1_python_install_all
+	distutils-r1_python_src_all
 }
