@@ -37,36 +37,36 @@ SE="${S}/erlang_part"
 
 
 src_prepare() {
-    S=$SP
-    distutils-r1_src_prepare
+    #S=$SP
+    #distutils-r1_src_prepare
 
-    #S=$SE
-    #rebar_src_prepare
+    S=$SE
+    rebar_src_prepare
 }
 
 
 src_configure() {
-    S=$SP
-    distutils-r1_src_configure
+    #S=$SP
+    #distutils-r1_src_configure
 
-    #S=$SE
-    #rebar_src_configure
+    S=$SE
+    rebar_src_configure
 	
 }
 
 src_compile() {
-    S=$SP
-    distutils-r1_src_compile
+    #S=$SP
+    #distutils-r1_src_compile
 
-    #S=$SE
-    #rebar_src_compile
+    S=$SE
+    rebar_src_compile
 }
 
 
 src_install() {
-    S=$SP
-    distutils-r1_src_install
+    #S=$SP
+    #distutils-r1_src_install
 
-    #S=$SE
-    #rebar_src_install
+    S=$SE
+    rebar_src_install
 }
