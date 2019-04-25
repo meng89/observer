@@ -42,7 +42,7 @@ src_prepare() {
 
 src_compile() {
 	      	S="${S_PY}"
-		distutils-r1_python_compile
+		distutils-r1_python_compile_all
 }
 
 
