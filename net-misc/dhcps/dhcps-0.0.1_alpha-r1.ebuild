@@ -33,19 +33,13 @@ S_EL="${S}/erlang_part"
 #S="${S_PY}"
 #echo $S
 
-python_prepare_all() {
+src_prepare() {
     S="${S_PY}"
     distutils-r1_python_prepare_all
 }
 
 
-python_compile_all() {
-	S="${S_PY}"
-	distutils-r1_python_compile_all
-}
-
-
-python_install_all() {
+src_install() {
 	S="${S_PY}"
 	distutils-r1_python_install_all
 }
