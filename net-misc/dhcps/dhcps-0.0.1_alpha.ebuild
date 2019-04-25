@@ -30,8 +30,10 @@ S_OR="${S}"
 S_PY="${S}/python_part/dhcpspp"
 S_EL="${S}/erlang_part"
 
+S="${S_PY}"
+echo $S
+
 python_prepare_all() {
-    S="${S_PY}"
-    echo $S
+    
     distutils-r1_python_prepare_all
 }		
