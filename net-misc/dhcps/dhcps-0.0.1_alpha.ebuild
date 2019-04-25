@@ -31,5 +31,6 @@ S_PY="${S}/python_part"
 S_EL="${S}/erlang_part"
 
 python_prepare_all() {
-		     local S="${S_PY}"
+    local S="${S_PY}"
+    distutils-r1_python_prepare_all
 }		
