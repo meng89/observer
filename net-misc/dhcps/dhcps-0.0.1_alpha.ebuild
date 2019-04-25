@@ -27,7 +27,7 @@ DEPEND="
 "
 
 S_OR="${S}"
-S_PY="${S}/python_part/dhcpspp"
+S_PY="${S}/python_part"
 S_EL="${S}/erlang_part"
 
 #S="${S_PY}"
