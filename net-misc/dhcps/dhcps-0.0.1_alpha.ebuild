@@ -6,7 +6,7 @@ EAPI="6"
 
 PYTHON_COMPAT=( python3_{4,5,6,7} )
 
-inherit rebar distutils-r1
+inherit rebar distutils-r1 systemd
 
 DESCRIPTION="DHCP Server"
 
@@ -64,6 +64,9 @@ src_compile() {
 
 
 src_install() {
+    systemd_dounit ${S_OR}/systemd/dhcps.service
+    newinitd ${S_OR}/openrc/dhcps dhcps
+    
     #S=$SP
     #distutils-r1_src_install
 
