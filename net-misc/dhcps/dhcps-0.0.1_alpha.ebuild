@@ -65,6 +65,8 @@ src_compile() {
 
 src_install() {
     systemd_dounit ${S_OR}/systemd/dhcps.service
+    systemd_install_serviced ${S_OR}/systemd/dhcps.service.conf
+    
     newinitd ${S_OR}/openrc/dhcps dhcps
     
     #S=$SP
