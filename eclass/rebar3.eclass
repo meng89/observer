@@ -231,9 +231,6 @@ rebar3_src_configure() {
 # @DESCRIPTION:
 # Compile project with rebar3.
 rebar3_src_compile() {
-    echo "${PROJECT}"
-    die
-    
 	debug-print-function ${FUNCNAME} "${@}"
 
 	erebar3 compile
@@ -255,7 +252,6 @@ rebar3_src_test() {
 #
 # Function expects that project conforms to Erlang/OTP structure.
 rebar3_src_install() {
-    die
     
 	debug-print-function ${FUNCNAME} "${@}"
 
