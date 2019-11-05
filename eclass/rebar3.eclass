@@ -210,7 +210,7 @@ rebar3_src_prepare() {
 	debug-print-function ${FUNCNAME} "${@}"
 
 	default
-	###rebar3_set_vsn
+	rebar3_set_vsn
 	if [[ -f rebar3.config ]]; then
 		rebar3_disable_coverage
 		rebar3_remove_deps
@@ -252,6 +252,7 @@ rebar3_src_test() {
 #
 # Function expects that project conforms to Erlang/OTP structure.
 rebar3_src_install() {
+    die
 	debug-print-function ${FUNCNAME} "${@}"
 
 	local bin
