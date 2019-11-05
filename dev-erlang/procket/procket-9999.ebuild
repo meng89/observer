@@ -25,3 +25,7 @@ RDEPEND="${DEPEND}"
 #DOCS=( CHANGELOG.md NOTICE README.md )
 
 #RESTRICT="test"
+
+src_prepare() {
+    sed -i -e 's/"ispell"/"aspell"/' c_src/Makefile || die "Sed failed!"
+}
