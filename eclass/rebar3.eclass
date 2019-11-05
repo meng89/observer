@@ -231,7 +231,7 @@ rebar3_src_configure() {
 # @DESCRIPTION:
 # Compile project with rebar3.
 rebar3_src_compile() {
-    echo "$(PROJECT)"
+    echo "${PROJECT}"
     die
     
 	debug-print-function ${FUNCNAME} "${@}"
