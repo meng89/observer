@@ -252,7 +252,6 @@ rebar3_src_test() {
 #
 # Function expects that project conforms to Erlang/OTP structure.
 rebar3_src_install() {
-    die
 	debug-print-function ${FUNCNAME} "${@}"
 
 	local bin
