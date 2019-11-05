@@ -42,7 +42,7 @@ EXPORT_FUNCTIONS src_prepare src_compile src_test src_install
 # emerging dev-util/rebar:3
 REBAR3_DEPS="
 	dev-lang/erlang
-	dev-util/rebar:3
+	dev-util/rebar-bin
 "
 
 # @ECLASS-VARIABLE: REBAR3_APP_SRC
@@ -210,7 +210,7 @@ rebar3_src_prepare() {
 	debug-print-function ${FUNCNAME} "${@}"
 
 	default
-	rebar3_set_vsn
+	###rebar3_set_vsn
 	if [[ -f rebar3.config ]]; then
 		rebar3_disable_coverage
 		rebar3_remove_deps
