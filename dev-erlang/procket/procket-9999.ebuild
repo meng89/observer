@@ -11,8 +11,6 @@ DESCRIPTION="Erlang interface to low level socket operations"
 HOMEPAGE="https://github.com/msantos/procket"
 #SRC_URI="https://github.com/msantos/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-S="${WORKDIR}/${PN}"
-
 LICENSE="BSD-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~sparc ~x86"
