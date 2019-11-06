@@ -27,5 +27,5 @@ RDEPEND="${DEPEND}"
 #RESTRICT="test"
 
 src_prepare() {
-    sed -i -e 's/"ispell"/"aspell"/' c_src/Makefile || die "Sed failed!"
+    sed -i -e 's/"^PROJECT .*$"/"PROJECT := ${PN}"/' c_src/Makefile || die "Sed failed!"
 }
