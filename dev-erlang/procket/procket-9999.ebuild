@@ -25,6 +25,7 @@ RDEPEND="${DEPEND}"
 #RESTRICT="test"
 
 src_prepare() {
-    sed -i -e 's/"^PROJECT .*$"/"PROJECT := ${PN}"/' c_src/Makefile || die "Sed failed!"
+    sed -i '/^PROJECT .*$/d' c_src/Makefile
+    sed -i '3a\PROJECT := ${PN}' c_src/Makefile
     default
 }
