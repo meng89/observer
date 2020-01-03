@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/msantos/procket"
 
 LICENSE="BSD-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~sparc ~x86"
+KEYWORDS=""
 
 DEPEND="dev-lang/erlang
 	dev-util/rebar-bin"
