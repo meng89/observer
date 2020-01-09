@@ -5,7 +5,7 @@ EAPI=6
 
 inherit rebar3 git-r3
 
-EGIT_REPO_URI="git://github.com/msantos/procket.git"
+EGIT_REPO_URI="https://github.com/msantos/procket.git"
 
 DESCRIPTION="Erlang interface to low level socket operations"
 HOMEPAGE="https://github.com/msantos/procket"

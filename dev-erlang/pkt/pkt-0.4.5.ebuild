@@ -3,17 +3,20 @@
 
 EAPI=6
 
-inherit rebar
+inherit rebar3
 
-DESCRIPTION="Erlang interface to low level socket operations"
-HOMEPAGE="https://github.com/msantos/procket"
+DESCRIPTION="Erlang network protocol library"
+HOMEPAGE="https://github.com/msantos/pkt"
 SRC_URI="https://github.com/msantos/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~sparc ~x86"
 
-DEPEND="dev-lang/erlang"
+DEPEND="dev-lang/erlang
+	dev-util/rebar-bin
+	dev-erlang/pcapfile"
+	
 RDEPEND="${DEPEND}"
 
 #DOCS=( CHANGELOG.md NOTICE README.md )
