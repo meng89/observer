@@ -22,3 +22,9 @@ RDEPEND="${DEPEND}"
 
 # Tests need rebar3. The build somewhat works with rebar2.
 #RESTRICT="test"
+
+src_prepare() {
+    sed -i '/^PROJECT .*$/d' c_src/Makefile
+    sed -i '3a\PROJECT := ${PN}' c_src/Makefile
+    default
+}
