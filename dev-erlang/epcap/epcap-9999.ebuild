@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit rebar3 git-r3
+inherit rebar3-r1 git-r3
 
 DESCRIPTION="Erlang packet capture interface using pcap"
 HOMEPAGE="https://github.com/msantos/${PN}"
@@ -29,9 +29,11 @@ RDEPEND="${DEPEND}"
 #RESTRICT="test"
 
 src_prepare() {
-    #sed -i '/^PROJECT .*$/d' c_src/Makefile
-    #sed -i '3a\PROJECT := ${PN}' c_src/Makefile
-    mv rebar.config rebar3.config
-    rebar3_remove_deps
-    default
+    sed -i '/^PROJECT .*$/d' c_src/Makefile
+    sed -i '3a\PROJECT := ${PN}' c_src/Makefile
+    #mv rebar.config rebar3.config
+    #mv rebar.config.script rebar3.config.script
+    rm rebar.lock
+    rebar3-r1_src_prepare
+    #default
 }

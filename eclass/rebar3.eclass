@@ -232,7 +232,7 @@ rebar3_src_configure() {
 # Compile project with rebar3.
 rebar3_src_compile() {
 	debug-print-function ${FUNCNAME} "${@}"
-
+    echo "aslfkjaslkdfalskjfsaldkjfaslkfjlaksfjlsakfjlaskjflkj"
 	erebar3 compile
 }
 
