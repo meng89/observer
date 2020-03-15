@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit rebar3
+inherit rebar3 git-r3
 
 DESCRIPTION="Erlang packet capture interface using pcap"
 HOMEPAGE="https://github.com/msantos/${PN}"
