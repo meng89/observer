@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit rebar3
+inherit rebar
 
 DESCRIPTION="Erlang packet capture interface using pcap"
 HOMEPAGE="https://github.com/msantos/${PN}"
@@ -24,9 +24,9 @@ RDEPEND="${DEPEND}"
 # Tests need rebar3. The build somewhat works with rebar2.
 #RESTRICT="test"
 
-src_prepare() {
+#src_prepare() {
     #sed -i '/^PROJECT .*$/d' c_src/Makefile
     #sed -i '3a\PROJECT := ${PN}' c_src/Makefile
-    rebar3_remove_deps
-    default
-}
+    #rebar3_remove_deps
+#    default
+#}
