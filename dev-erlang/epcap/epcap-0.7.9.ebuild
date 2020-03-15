@@ -15,18 +15,8 @@ KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~sparc ~x86"
 
 DEPEND="dev-lang/erlang
 	dev-erlang/pkt
-	dev-util/rebar-bin"
+	app-admin/sudo
+	net-libs/libpcap
+"
 
 RDEPEND="${DEPEND}"
-
-#DOCS=( CHANGELOG.md NOTICE README.md )
-
-# Tests need rebar3. The build somewhat works with rebar2.
-#RESTRICT="test"
-
-#src_prepare() {
-    #sed -i '/^PROJECT .*$/d' c_src/Makefile
-    #sed -i '3a\PROJECT := ${PN}' c_src/Makefile
-    #rebar3_remove_deps
-#    default
-#}

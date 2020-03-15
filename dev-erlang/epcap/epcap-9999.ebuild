@@ -16,7 +16,10 @@ KEYWORDS=""
 
 DEPEND="dev-lang/erlang
 	dev-erlang/pkt
-	dev-util/rebar-bin"
+	dev-util/rebar-bin
+	sys-admin/sudo
+	net-libs/libpcap
+"
 
 RDEPEND="${DEPEND}"
 
@@ -28,6 +31,6 @@ RDEPEND="${DEPEND}"
 src_prepare() {
     #sed -i '/^PROJECT .*$/d' c_src/Makefile
     #sed -i '3a\PROJECT := ${PN}' c_src/Makefile
-    rebar3_remove_deps
+    #rebar3_remove_deps
     default
 }
