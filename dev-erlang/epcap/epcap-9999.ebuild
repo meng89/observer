@@ -31,6 +31,6 @@ RDEPEND="${DEPEND}"
 src_prepare() {
     #sed -i '/^PROJECT .*$/d' c_src/Makefile
     #sed -i '3a\PROJECT := ${PN}' c_src/Makefile
-    #rebar3_remove_deps
+    rebar3_remove_deps
     default
 }
