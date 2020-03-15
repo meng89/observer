@@ -17,7 +17,7 @@ KEYWORDS=""
 DEPEND="dev-lang/erlang
 	dev-erlang/pkt
 	dev-util/rebar-bin
-	sys-admin/sudo
+	app-admin/sudo
 	net-libs/libpcap
 "
 
