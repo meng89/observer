@@ -23,6 +23,5 @@ DEPEND=""
 
 src_unpack() {
              unpack ${P}.tar.gz
-             mv /var/tmp/portage/${PN}-${PN}${PV}   /var/tmp/portage/${PN}-${PV}
-             cd ${S}
+             mv ${PN}-${PN}${PV}  ${PN}-${PV}
 }
