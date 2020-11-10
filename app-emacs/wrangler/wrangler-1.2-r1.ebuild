@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
-inherit elisp
+inherit  autotools
 
 DESCRIPTION="An Erlang Refactorer"
 HOMEPAGE="http://www.cs.kent.ac.uk/projects/wrangler/
